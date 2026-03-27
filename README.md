@@ -23,10 +23,24 @@ Three levels of caching are provided, from manual to fully automatic:
 
 ---
 
-## Installation
+At the Julia REPL, type "`]`" to switch into Package manager mode and then type:
+
+```
+pkg> add DataCaches
+```
+
+Or, either in the Julia REPL or a script:
 
 ```julia
-] add DataCaches
+using Pkg
+Pkg.add("DataCaches")
+```
+
+Or, if you want the latest development version from the source repository:
+
+```julia
+using Pkg
+Pkg.add(url="https://github.com/jeetsukumaran/DataCaches.jl")
 ```
 
 ---
