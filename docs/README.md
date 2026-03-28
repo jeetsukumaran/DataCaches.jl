@@ -11,7 +11,7 @@ dev-link the local package into the docs environment:
 ```bash
 julia --project=docs -e '
     import Pkg
-    Pkg.develop(PackageSpec(path=pwd()))
+    Pkg.develop(Pkg.PackageSpec(path=pwd()))
     Pkg.instantiate()
 '
 ```

@@ -309,7 +309,7 @@ To build the docs locally, run from the repository root:
 # One-time setup
 julia --project=docs -e '
     import Pkg
-    Pkg.develop(PackageSpec(path=pwd()))
+    Pkg.develop(Pkg.PackageSpec(path=pwd()))
     Pkg.instantiate()
 '
 
